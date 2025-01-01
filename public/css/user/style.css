@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+.navbar-brand img {
+    width: 75px;
+    height: 75px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.navbar-brand:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+
+.navbar .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #9BA0A6;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.5s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #ffff;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+
+.navbar .nav-link i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover i {
+    transform: scale(1.2);
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-orange {
+    background-color: #f79000;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #ff9900;
+}
+
+.social-icons a {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.bg-footer-custom {
+    background-color: #222830;
+}
+
+.bg-black-custom{
+    background-color: #18191a;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li a:hover {
+    color: #f79000;
+}
+
+.footer-icon {
+    background-color: #1d2229;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer-selling-dec{
+    color: #9ba0a6;
+    font-size: .8125rem;
+}
+
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+    .footer-selling-dec {
+        font-size: 0.75rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .footer-selling-dec {
+        font-size: 0.6875rem;
+    }
+    .footer-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin-right: 8px;
+    }
+    .social-icons a {
+        font-size: 16px;
+    }
+}
