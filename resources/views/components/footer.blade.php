@@ -42,8 +42,6 @@
                     <h5 class="fw-bold">Bantuan</h5>
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white text-decoration-none">Syarat dan Ketentuan</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Alur Pemesanan Barang</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Pengembalian</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a></li>
                     </ul>
                 </div>
