@@ -28,7 +28,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
-                    <img src="{{ asset('img/logo.svg') }}" alt="Logo" class="footer-logo rounded-circle" style="width: 100px;">
+                    <img src="{{ asset('img/logo.svg') }}" alt="Logo" class="footer-logo rounded-circle"
+                        style="width: 100px;">
                     <p class="mt-3" style="font-weight: bold">
                         Dapatkan promo terbaru dan info lainnya di social media kami!
                     </p>
@@ -41,15 +42,18 @@
                 <div class="col-md-2 mb-4 mb-md-0">
                     <h5 class="fw-bold">Bantuan</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Syarat dan Ketentuan</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Kebijakan Privasi</a></li>
+                        <li><a href="{{ route('policy') }}" class="text-white text-decoration-none">Syarat dan
+                                Ketentuan</a></li>
+                        <li><a href="{{ route('pemesanan') }}" class="text-white text-decoration-none">Cara
+                                Pemesanan</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2 mb-4 mb-md-0">
                     <h5 class="fw-bold">Sulvatara</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Tentang Kami</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Lokasi Toko</a></li>
+                        <li><a href="{{ route('company') }}" class="text-white text-decoration-none">Tentang Kami</a>
+                        </li>
+                        <li><a href="{{ route('lokasi') }}" class="text-white text-decoration-none">Lokasi Toko</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center text-md-start">
