@@ -5,7 +5,7 @@
             <span class="ms-3">Download Sulvatara Adventure App</span>
         </a>
         <div>
-            <a href="#" class="text-white me-3 text-decoration-none">Tentang</a>
+            <a href="{{ route('company') }}" class="text-white me-3 text-decoration-none">Tentang</a>
             <a href="#" class="text-white text-decoration-none align-items-center">
                 <i class="fab fa-whatsapp"></i>
                 <span class="ms-1">Customer Service</span>
