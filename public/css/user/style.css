@@ -14,13 +14,33 @@ html, body {
     line-height: 26px;
 }
 
-/* .syarat-sewa ol {
-    counter-reset: section;
+.breadcumb-product {
+    padding-top: 35px;
+    text-align: left;
+    align-content: center;
+    margin-bottom: 1rem;
 }
 
-.syarat-sewa ol > li {
-    counter-increment: section;
-} */
+.breadcumb-product a{
+    text-decoration: none;
+    color: #535b66;
+}
+
+.breadcumb-product p{
+    color: #535b66;
+}
+
+.breadcumb-product h1{
+    font-family: 'drukText', 'sans-serif';
+    font-size: 32px;
+}
+
+
+.breadcumb-product span{
+    font-family: 'albert sans', sans-serif;
+    font-size: 13px;
+    position: relative;
+}
 
 .syarat-sewa ul {
     list-style-type: circle;
@@ -35,7 +55,44 @@ html, body {
     text-decoration: none;
 }
 
+.horizontal-line {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
 
+.btns{
+    position: absolute;
+    left: 0;
+    bottom: -100%; /* Awalnya tersembunyi di luar gambar */
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%; /* Pastikan tombol mencakup lebar penuh gambar */
+    background-color: rgba(0, 0, 0, 0.5); /* Tambahkan transparansi untuk efek */
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button {
+    border: none;
+    background-color: transparent; /* Hapus background tombol agar transparan */
+    color: #fff;
+    width: 50%; /* Setiap tombol mengambil setengah lebar */
+    display: inline-block; /* Untuk menempatkan tombol secara horizontal */
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover {
+    color: #fcb941;
+}
+
+.product-img {
+    position: relative; /* Agar elemen di dalamnya bisa menggunakan posisi absolut */
+    overflow: hidden; /* Untuk menyembunyikan elemen yang keluar dari batas gambar */
+    border-radius: 10px;
+}
+
+.product-img:hover .btns {
+    bottom: 0;
+}
 
 .privacy-policy-header{
     background: #000;
@@ -85,8 +142,20 @@ html, body {
     padding: 30px 20px 25px 0px;
 }
 
-.product-text h4{
+.product-text a {
+    color: #000;
+    text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+}
+
+.product-text a:hover {
+    color: #fcb941;
+}
+
+.product-text h4{
+    color: #9BA0A6;
+    font-size: 12px;
 }
 
 .slider-carousel .owl-nav {
@@ -305,6 +374,18 @@ html, body {
     z-index: 2;
 }
 
+.headline a{
+    text-decoration: none;
+    color: #18191a;
+}
+
+.image-card .image-text a {
+    font-family: 'drukText', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
 .best-selling h3{
     font-size: 32px;
     font-weight: bold;
@@ -328,6 +409,16 @@ html, body {
     color: #fff;
     font-weight: bold;
     font-size: 1rem;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.card-text a {
+    font-family: 'drukText', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
     padding: 10px 0;
     margin: 0;
 }
@@ -452,6 +543,11 @@ footer ul li a:hover {
     margin-right: 10px;
 }
 
+.filters .btn-group {
+    margin-bottom: 1rem;
+}
+
+
 .footer-selling-dec{
     color: #9ba0a6;
     font-size: .8125rem;
@@ -572,6 +668,10 @@ footer ul li a:hover {
 
     .img-custom-size {
         height: 160px;
+    }
+
+    .filters .btn-group {
+        margin-bottom: 0;
     }
 
 }

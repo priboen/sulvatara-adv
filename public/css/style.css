@@ -1477,6 +1477,7 @@ h6 .badge {
 .btn.btn-lg {
   padding: 0.55rem 1.5rem;
   font-size: 12px;
+  width: 100%;
 }
 .btn.btn-lg.btn-icon-split i {
   line-height: 42px;
@@ -1623,6 +1624,7 @@ h6 .badge {
   box-shadow: 0 2px 6px #acb5f6;
   background-color: #6777ef;
   border-color: #6777ef;
+  width: 100%;
 }
 .btn-primary:focus, .btn-primary.disabled:focus {
   background-color: #394eea !important;
