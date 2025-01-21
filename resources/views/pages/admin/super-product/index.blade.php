@@ -112,11 +112,11 @@
 
             toggleSwitches.forEach(toggle => {
                 toggle.addEventListener('change', (event) => {
-                    const isChecked = event.target.checked; // Status toggle
-                    const id = event.target.getAttribute('data-id'); // ID produk
-
-                    // Kirim AJAX untuk memperbarui status
-                    fetch(`super-product/toggle/${id}`, {
+                    const isChecked = event.target.checked;
+                    const id = event.target.getAttribute('data-id');
+                    const toggleUrl = `{{ route('super-product.toggle', ':id') }}`.replace(':id',
+                        id);
+                    fetch(toggleUrl, {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',

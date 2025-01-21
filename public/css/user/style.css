@@ -674,6 +674,13 @@ footer ul li a:hover {
         margin-bottom: 0;
     }
 
+    .card-wrapper {
+        padding-top: 20vh;
+    }
+
+    .card-wrapper-new {
+        padding-top: 25vh;
+    }
 }
 
 @media (max-width: 576px) {

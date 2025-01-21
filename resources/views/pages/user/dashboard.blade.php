@@ -76,7 +76,6 @@
             </div>
         </div>
     </div>
-
     <div class="card-wrapper">
         <div class="container">
             <div class="row">
@@ -102,8 +101,7 @@
             </div>
         </div>
     </div>
-
-    <div class="card-wrapper">
+    <div class="card-wrapper-new">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -128,6 +126,7 @@
             </div>
         </div>
     </div>
+    <div class="py-5"></div>
     <div class="container">
         <div class="image-card-container margin-custom">
             <div class="image-card">
@@ -198,7 +197,7 @@
         $('.owl-carousel.slider-carousel').owlCarousel({
             dots: false,
             loop: true,
-            margin: 30,
+            margin: 16,
             stagePadding: 2,
             autoplay: false,
             nav: true,
@@ -209,12 +208,15 @@
             responsive: {
                 0: {
                     items: 1,
+                    margin: 8
                 },
                 768: {
                     items: 2,
+                    margin: 12
                 },
                 992: {
-                    items: 5
+                    items: 5,
+                    margin: 16
                 }
             }
         });
