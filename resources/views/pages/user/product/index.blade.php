@@ -177,7 +177,7 @@
                         </div>
                         <div class="product-text">
                             <h4>{{ $product->brand->name }} - {{ $product->category->name }}</h4>
-                            <a href="#">{{ $product->name }}</a>
+                            <a href="{{ route('products.show', $product->slug) }}">{{ $product->name }}</a>
                             <p>Rp. {{ number_format($product->price, 0, ',', '.') }}/Hari</p>
                         </div>
                     </div>
